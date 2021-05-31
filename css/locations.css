@@ -1,0 +1,569 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Header ===== */
+
+.header {
+    position: sticky;
+    top: 0;
+    background: #1A1A1A;
+    width: 100%;
+    height: 3.875rem;
+    font-family: 'Roboto', sans-serif;
+    z-index: 4;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.option {
+    margin-right: 2rem;
+    list-style-type: none;
+    color: #F6EFE1;
+    display: inline;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 3.875rem;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.link {
+    color: #F6EFE1;
+}
+
+.lang-wrapper {
+    display: inline;
+    line-height: 4.1rem;
+}
+
+.rectangle {
+    position: relative;
+    left: 0.341rem;
+    bottom: 0.213rem;
+}
+
+.white-line {
+    height: 0.13rem;
+    width: 100%;
+}
+
+.wrapper-menu {
+    margin-right: 7%;
+}
+
+.logo-wrapper, .options-wrapper {
+    display: inline-block;
+}
+
+.logo-wrapper {
+    margin-left: 7%;
+    margin-top: 0.7rem;
+}
+
+.lang {
+    display: inline;
+}
+
+@media only screen and (max-width: 767px) { 
+    .menu-list{
+        display: block;
+    }
+    .logo-wrapper{
+        display: inline;
+        position: relative;
+        top: 0.8rem;
+        left: 0;
+    }
+    .wrapper-menu{
+        display: none;
+    }
+    /*.burger{
+        display: block;
+        color: white;
+        font-size: 2rem;
+        position: relative;
+        top: 1rem;
+        left: 30%
+    }*/
+}
+
+/* ===== Title ===== */
+
+.title-wrapper {
+    position: relative;
+    width: 100%;
+    height: 8.375rem;
+    background: #1A1A1A;
+}
+
+.locations-title {
+    font-family: 'Anton', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 4.375rem;
+    text-transform: uppercase;
+    color: #F6EFE1;
+    margin-left: 7%;
+    position: relative;
+    top: 2rem;
+}
+
+@media only screen and (max-width: 767px) { 
+   .locations-title{
+        font-size: 1.7rem;
+   }
+}
+
+/* ======== TABLE ======== */
+
+.table-section {
+    width: 100%;
+    height: 34.56rem;
+    background-image: url('/images/Group-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.table-title {
+    margin-left: 7%;
+    position: relative;
+    top: 2rem;
+}
+
+.sort-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.188rem;
+    color: #1A1A1A;
+    display: inline-block;
+    position: relative;
+    bottom: 0.18rem;
+    margin-left: 0.37rem;
+}
+
+.triangle-icon {
+    position: relative;
+    bottom: 0.25rem;
+    left: 0.15rem;
+}
+
+.surface {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.surface:hover {
+    cursor: pointer;
+}
+
+.surface-wrapper {
+    display: inline-block;
+}
+
+.sub-menu {
+    width: 12.563rem;
+    height: 12rem;
+    background-color: #1A1A1A;
+    position: absolute;
+    z-index: 3;
+    left: 7rem;
+    display: none;
+}
+
+.table-option {
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.188rem;
+    text-decoration-line: underline;
+    color: #F6EFE1;
+    display: inline-block;
+}
+
+.table-option {
+    cursor: pointer;
+}
+
+.table {
+    position: relative;
+    top: 3.875rem;
+    height: 28.06rem;
+    width: 86%;
+    background-color: white;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.table-frame {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 1367px) {
+    .top10table {
+        height: 75vh;
+    }
+}
+
+/* ===== ADDITIONAL INFO =====*/
+
+.info {
+    background: #1A1A1A;
+    height: 30.63rem;
+    width: 100%;
+}
+
+.info-title {
+    font-family: 'Anton', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.188rem;
+    text-transform: uppercase;
+    color: #F6EFE1;
+    position: relative;
+    top: 2.063rem;
+    margin-left: 7%;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 7%;
+    margin-right: 7%;
+    position: relative;
+    top: 4rem;
+}
+
+.google-maps-wrapper {
+    width: 50%;
+}
+
+.google-earth-wrapper {
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.item {
+    color: #F6EFE1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.google-maps-title, .google-earth-title {
+    margin-bottom: 2rem;
+}
+
+.last-item {
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 767px) { 
+    .info{
+        height: 60rem;
+    }
+    .info-container{
+         display: block;
+    }
+
+    .google-maps-wrapper, .google-earth-wrapper{
+        width: 100%;
+    }
+    .google-earth-wrapper{
+        margin-left: 0;
+    }
+
+    .criteria-info{
+        height: 38rem;
+    }
+
+}
+
+
+/* ===== Footer ===== */
+
+.footer {
+    position: relative;
+    height: 3.75rem;
+    background: #1A1A1A;
+}
+
+.footer-container {
+    position: relative;
+    top: 1.188rem;
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.3rem;
+    color: #F6EFE1;
+}
+
+.sm {
+    margin-right: 1.5rem;
+}
+
+.white-line3 {
+    width: 100%;
+    position: relative;
+    height: 8px;
+    background: #F6EFE1;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+@media only screen and (max-width: 767px) {
+    .footer{height: 6rem;}
+    .footer-container{
+        display: block;
+        text-align: center;
+    }
+    .social-media{
+        margin-top: 1rem;
+    }
+ }
+
+/* ============ Criteria ============ */
+
+.criteria1 {
+    cursor: pointer;
+}
+
+.paragraphs-wrapper {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.p1 {
+    margin-bottom: 2%;
+}
+
+@media only screen and (min-width: 1367px) {
+    .paragraphs-wrapper {
+        margin-top: 3.5%;
+    }
+}
+@media only screen and (max-width: 767px) { 
+    .paragraphs-wrapper {
+        margin-top: 15%;
+    }
+}
+
+
+/* ======= Why Argentina ======= */
+
+.why-arg {
+    position: relative;
+    height: 36rem;
+    background-image: url('../images/Frame\ 4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.text-container {
+    margin-left: 7%;
+    margin-right: 40%;
+    position: relative;
+    top: 4rem;
+}
+
+.paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.188rem;
+    color: #F6EFE1;
+}
+
+.parag {
+    margin-top: 1.5rem;
+}
+
+/*====== Highest Point ======*/
+
+.highest-point {
+    position: relative;
+    height: 42rem;
+    background: #1A1A1A;
+}
+
+.highest-table {
+    height: 30.62rem;
+    background: #F6EFE1;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+/* =========== Contact Message =========== */
+
+.thank-you-message {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f6efe1;
+    text-transform: uppercase;
+}
+
+.in-touch {
+    font-family: 'Roboto', sans-serif;
+    color: #f6efe1;
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1.7%;
+}
+
+.message-section {
+    background-color: #1a1a1a;
+    height: 79vh;
+}
+
+.contact-message-wrapper {
+    position: relative;
+    top: 7%;
+}
+
+.send-btn {
+    position: relative;
+    width: 8rem;
+    height: 2.5rem;
+    /*margin: 1.65rem 22.875rem 0 0.125rem;*/
+    padding: 0.625rem 1rem;
+    border-radius: 4px;
+    border: solid 1px #f6efe1;
+    background: rgba(255, 255, 255, 0);
+    margin-left: 45%;
+    margin-top: 2%;
+}
+
+.send-btn:hover {
+    background: rgba(246, 239, 225, 0.2);
+    cursor: pointer;
+}
+
+.send-text {
+    font-family: 'Roboto', sans-serif;
+    color: #F6EFE1;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    display: inline;
+}
+
+.send-img {
+    position: relative;
+    top: 0.07rem;
+    right: 7%;
+}
+
+@media only screen and (min-width: 1367px) {
+    .message-section {
+        height: 86.5vh;
+    }
+}
+
+/* ========== ABOUT ===========*/
+
+.about {
+    background-image: url('/images/Group-2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 4rem;
+    height: 40rem;
+}
+
+.pp1 {
+    color: #1A1A1A;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.about-wrapper{
+    margin-left: 7%;
+    width: 45%;
+}
+
+.about-photo-wrapper{
+    width: 45%;
+}
+
+.signature{
+    margin-top: 5%;
+}
+
+.other-links{
+    text-decoration: underline;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.nodecor{
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
+@media only screen and (min-width: 1367px) {
+    .footer{
+        height: 5rem;
+    }
+
+    .about-container{
+        top: 6rem;
+        height: 45rem;
+    }
+
+    .footer-container{
+        top: 2rem;
+    }
+}

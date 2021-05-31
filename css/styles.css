@@ -1,0 +1,471 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Header ===== */
+
+.header {
+    position: sticky;
+    top: 0;
+    background: #1A1A1A;
+    width: 100%;
+    height: 3.875rem;
+    font-family: 'Roboto', sans-serif;
+    z-index: 4;
+}
+
+.logo-wrapper{
+    display: none;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 7%;
+}
+
+.option {
+    margin-right: 2rem;
+    list-style-type: none;
+    color: #F6EFE1;
+    display: inline;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 3.875rem;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.link {
+    color: #F6EFE1;
+}
+
+.lang-wrapper {
+    margin-right: 2rem;
+    line-height: 4.1rem;
+}
+
+.rectangle {
+    position: relative;
+    left: 0.341rem;
+    bottom: 0.213rem;
+}
+
+.white-line {
+    height: 0.13rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) { 
+    .menu-list{
+        display: none;
+    }
+    .logo-wrapper{
+        display: inline-block;
+        position: relative;
+        top: 0.8rem;
+        left: 7%;
+    }
+    /*.burger{
+        display: block;
+        color: white;
+        font-size: 2rem;
+        position: relative;
+        top: 1rem;
+        left: 30%
+    }*/
+}
+
+/* ===== Home ===== */
+
+.home-img {
+    height: 36.125rem;
+    background-image: url('/images/Hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.img-title {
+    margin-top: 2rem;
+    margin-left: 7%;
+}
+
+.byciclis {
+    position: relative;
+    left: 15%;
+}
+
+.welcome {
+    position: relative;
+    height: 21rem;
+    background-image: url('/images/BG-Welcome.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.welcome-wrapper {
+    position: relative;
+    top: 2rem;
+}
+
+.welcome-title {
+    width: 8.25rem;
+    height: 3.313rem;
+    margin-left: 7%;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1a1a1a;
+}
+
+.paragraph-wrapper {
+    margin-top: 1.5rem;
+    position: relative;
+    margin-left: 7%;
+    max-width: 65%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #1a1a1a;
+}
+
+.paragraph {
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 767px) { 
+    .home-img{
+        height: 23rem;
+    }
+    .img-title {
+        width: 80%;
+        margin-left: 4%;
+    }
+    .byciclis {
+        top: 2rem;
+        width: 37%;
+        margin-left: 33%;
+    }
+    .welcome-title{
+        font-size: 1.7rem;
+        height: 0;
+        
+    }
+    .welcome-wrapper{
+        top: 1rem;
+    }
+    .paragraph-wrapper {
+        font-size: 0.9rem;
+        margin-top: 0rem;
+        max-width: 80%;
+        margin-right: 7%;
+        top: 2.5rem;
+    }
+    
+    .welcome{
+        height: 28rem;
+    }
+}
+
+/* ===== Second Menu ===== */
+
+.second-menu {
+    background: #1a1a1a;
+    height: 8rem;
+}
+
+.second-menu-container {
+    position: relative;
+    top: 3.406rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.links-index {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.188rem;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f6efe1;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.option-second-menu {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.188rem;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f6efe1;
+    display: flex;
+    flex-direction: row;
+}
+
+.second-menut-title {
+    margin-top: 0.38rem;
+    margin-left: 1rem;
+}
+
+.white-line2 {
+    width: 100%;
+    height: 8px;
+    bottom: 533px;
+    background: #F6EFE1;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .second-menu{
+        height: 21rem;
+    }
+
+    .second-menu-container{
+        display: inline-block;
+        top: 2.4rem;
+        margin-left: 16%;
+    }
+
+    .option-second-menu{
+        display: block;
+    }
+
+    .links-index{
+        display: block;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .second-option{
+        margin-top: 2rem;
+    }
+
+    }
+
+/* ===== Contact ===== */
+
+.form {
+    width: 65%;
+    margin: auto;
+    position: relative;
+    top: 4rem;
+}
+
+.contact {
+    height: 29.563rem;
+    background-image: url('/images/ContactBG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.contact-title {
+    position: relative;
+    top: 3rem;
+    margin-left: 17.5%;
+    font-family: 'Anton', sans-serif;
+    font-size: 2.25rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f6efe1;
+}
+
+.wrapper-input {
+    display: inline-block;
+    width: 48%;
+}
+
+.wrapper-input2 {
+    display: inline-block;
+    width: 100%;
+}
+
+.name-email-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-nameEmail {
+    width: 100%;
+    height: 2.5rem;
+    margin: 1rem 1.5rem 1.75rem 0.125rem;
+    border-radius: 4px;
+    border: solid 1px #f6efe1;
+    background: rgba(255, 255, 255, 0);
+    color: #f6efe1;
+    padding: 0.5rem;
+}
+
+.input-nameEmail:focus {
+    color: #f6efe1;
+    padding: 0.5rem;
+}
+
+.input-message {
+    width: 100%;
+    height: 6.125rem;
+    margin: 1rem 1.5rem 1.75rem 0.125rem;
+    border-radius: 4px;
+    border: solid 1px #f6efe1;
+    background: rgba(255, 255, 255, 0);
+    color: #F6EFE1;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5rem;
+}
+
+.label-nameEmail {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 19px;
+    color: #F6EFE1;
+}
+
+.send-btn {
+    position: relative;
+    width: 6rem;
+    height: 2.5rem;
+    margin: 1.65rem 22.875rem 0 0.125rem;
+    padding: 0.625rem 1rem;
+    border-radius: 4px;
+    border: solid 1px #f6efe1;
+    background: rgba(255, 255, 255, 0);
+}
+
+.send-btn:hover {
+    background: rgba(246, 239, 225, 0.2);
+    cursor: pointer;
+}
+
+.send-text {
+    font-family: 'Roboto', sans-serif;
+    color: #F6EFE1;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    display: inline;
+}
+
+.send-img {
+    margin-left: 0.3rem;
+    position: relative;
+    top: 0.06rem;
+}
+
+.white-line3 {
+    width: 100%;
+    position: relative;
+    height: 8px;
+    background: #F6EFE1;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-title{
+        font-size: 1.7rem;
+        margin-left: 7%;
+        top: 1.4rem;
+    }
+
+    .contact{
+        height: 35rem;
+    }
+    
+    .wrapper-input{
+        display: block;
+        width: 100%;
+    }
+    .form{
+        margin-left: 7%;
+        top: 3rem;
+    }
+    .name-email-wrapper{
+        display: block;
+    }
+    .input-nameEmail, .input-message{
+        width: 19.6rem;
+    }
+
+    .send-btn{
+        margin: 0;
+    }
+}
+
+/* ===== Footer ===== */
+
+.footer {
+    position: relative;
+    height: 3.75rem;
+    background: #1A1A1A;
+}
+
+.footer-container {
+    position: relative;
+    top: 1.188rem;
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.3rem;
+    color: #F6EFE1;
+}
+
+.sm{
+    margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-container{
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+    .footer{
+        height: 6rem;
+    }
+    .social-media{
+        margin-top: 1rem;
+    }
+}
